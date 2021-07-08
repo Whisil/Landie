@@ -1,16 +1,17 @@
 @import url(/src/reset.css);
 $cDark: #111B47;
 $cTitle : rgba(9, 17, 51, 1);
+$cPar: rgba(111, 124, 178, 1);
 
 @mixin purchaseBtn {
     .purchase-btn{
         margin-right: 0;
         margin-left: auto;
-        padding: 5px 54px;
+        padding: 8px 54px;
         border: 2px solid $cDark;
         background-color: $cDark;
         border-radius: 4px;
-        font-style: 12px;
+        font-size: 16px;
         font-weight: 500;
         color: #fff;
         line-height: 18px;
@@ -28,14 +29,7 @@ $cTitle : rgba(9, 17, 51, 1);
 }
 
 
-// .bg-container{
-//     background-image: url('/src/images/Topbg.png');
-//     background-size: cover;
-//     background-repeat: no-repeat;
-// }
-body{
-    
-}
+// Top BG
 .bg-container{
  
     position: absolute;
@@ -179,3 +173,135 @@ body{
 }
 
 
+
+// FIRST ABOUT
+.first-about-section{
+    margin-top: 220px;
+    margin-bottom: 110px;
+    h1{
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 48px;
+        margin-bottom: 16px;
+        color: $cTitle;
+    }
+    p{
+        color: $cPar;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 80px;
+    }
+    .first-about__info_list{
+        display: flex;
+        justify-content: space-between;
+
+        .info__item{
+            margin-right: 30px;
+            img{
+                margin-bottom: 14px;
+            }
+            h4{
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 26px;
+                margin-bottom: 8px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 22px;
+                color: rgba(93, 105, 112, 1);
+            }
+        }
+    }
+
+    .first-about__images{
+        position: relative;
+        display: block;
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        .girl-second{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+}
+
+
+
+// Features
+.feature-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.feature__content{
+    .feature__content_info{
+
+        @include purchaseBtn();
+
+        padding: 0  80px;
+        h1{
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 48px;
+            margin-bottom: 16px;
+            color: $cTitle;
+        }
+        p{
+            color: $cPar;
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 80px;
+        }
+    }
+    
+    .feature__content_images{
+        position: relative;
+        display: block;
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        .flower-clouds{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+}
+
+.price{
+    @include purchaseBtn();
+    margin-top: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+    .container{
+        max-width: 600px;
+    }
+    h1{
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 48px;
+        color: $cTitle;
+    }
+    .price__subtitle{
+        font-size: 16px;
+        color: $cPar;
+        line-height: 26px;
+        padding: 0;
+    }
+    .purchase-btn{
+        max-width: 216px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+
+
+}
