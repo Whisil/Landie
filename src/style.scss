@@ -1,0 +1,181 @@
+@import url(/src/reset.css);
+$cDark: #111B47;
+$cTitle : rgba(9, 17, 51, 1);
+
+@mixin purchaseBtn {
+    .purchase-btn{
+        margin-right: 0;
+        margin-left: auto;
+        padding: 5px 54px;
+        border: 2px solid $cDark;
+        background-color: $cDark;
+        border-radius: 4px;
+        font-style: 12px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 18px;
+        transition: color .2s ease-in,
+                    background-color .2s ease-in;
+
+        &:hover{
+            color: $cDark;
+            transition: color .2s ease-in,
+                        background-color .2s ease-in;
+            background-color: #fff;
+        }
+
+    }
+}
+
+
+// .bg-container{
+//     background-image: url('/src/images/Topbg.png');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+// }
+body{
+    
+}
+.bg-container{
+ 
+    position: absolute;
+    right: 0;
+    overflow-x: hidden;
+    z-index: -1;
+    .bg-container__wrapper{
+        
+        width: 100%;
+
+
+        .cloud{
+            position: relative;
+            top: -100px;
+            right: -450px;
+            height: 1260px;
+            width: 1690px;
+        }
+        .man-img{
+            max-height: 760px;
+            position: absolute;
+            top: 300px;
+            right: -100px;
+        }
+        .man{
+            height: 100%;
+            max-width: 974px;
+        }
+        .big-gear{
+            position: absolute;
+            top: 240px;
+            right: 200px;
+            height: 144px;
+            width: 144px;
+            z-index: 10;
+        }
+        .small-gear{
+            position: absolute;
+            top: 300px;
+            right: 100px;
+            height: 85px;
+            width: 85px;
+        }
+        .pencil{
+            position: absolute;
+            top: 420px;
+            right: 50px;
+            height: 550px;
+            width: 40px;
+        }
+    }
+    
+}
+// Menu
+
+.menu{
+    padding-top: 20px;
+
+    .menu__left{
+        display: flex;
+        align-items: center;
+
+        
+        .menu__left_item{
+            margin-right: 60px;
+            p{
+                a{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .menu__center{
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .menu__right{
+        display: flex;
+        align-items: center;
+        // 
+        @include purchaseBtn();
+    }
+}
+
+
+// Introduction
+.introduction-section{
+    height: 1050px;  
+    .container{
+        height: 100%;
+        display: flex;
+        .introduction{
+            align-self: center;
+
+            .introduction__info{
+                h1{
+                  font-size: 50px;
+                  line-height: 66px;
+                  letter-spacing: 1px;
+                  font-weight: 500;  
+                  color: $cTitle;
+                  margin-bottom: 20px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: rgba(80, 95, 152, 1);
+                    margin-bottom: 75px;
+                }
+                @include purchaseBtn();
+                .purchase-btn{
+                    padding: 7px 40px;
+                    margin-right: 30px;
+                }
+                .more-btn{
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: 500;
+                    color: $cDark;
+                    border: 2px solid $cDark;
+                    border-radius: 4px;
+                    padding: 4px 50px;
+                    background-color: transparent;
+                    transition: color .2s ease-in,
+                                    background-color .2s ease-in;
+                    &:hover{
+                        background-color: $cDark;
+                        color: #fff;
+                        transition: color .2s ease-in,
+                                    background-color .2s ease-in;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+

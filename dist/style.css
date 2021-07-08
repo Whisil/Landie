@@ -1,0 +1,193 @@
+@import url(/src/reset.css);
+.bg-container {
+  position: absolute;
+  right: 0;
+  overflow-x: hidden;
+  z-index: -1;
+}
+
+.bg-container .bg-container__wrapper {
+  width: 100%;
+}
+
+.bg-container .bg-container__wrapper .cloud {
+  position: relative;
+  top: -100px;
+  right: -450px;
+  height: 1260px;
+  width: 1690px;
+}
+
+.bg-container .bg-container__wrapper .man-img {
+  max-height: 760px;
+  position: absolute;
+  top: 300px;
+  right: -100px;
+}
+
+.bg-container .bg-container__wrapper .man {
+  height: 100%;
+  max-width: 974px;
+}
+
+.bg-container .bg-container__wrapper .big-gear {
+  position: absolute;
+  top: 240px;
+  right: 200px;
+  height: 144px;
+  width: 144px;
+  z-index: 10;
+}
+
+.bg-container .bg-container__wrapper .small-gear {
+  position: absolute;
+  top: 300px;
+  right: 100px;
+  height: 85px;
+  width: 85px;
+}
+
+.bg-container .bg-container__wrapper .pencil {
+  position: absolute;
+  top: 420px;
+  right: 50px;
+  height: 550px;
+  width: 40px;
+}
+
+.menu {
+  padding-top: 20px;
+}
+
+.menu .menu__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .menu__left .menu__left_item {
+  margin-right: 60px;
+}
+
+.menu .menu__left .menu__left_item p a {
+  font-weight: 500;
+}
+
+.menu .menu__center img {
+  display: block;
+  margin: 0 auto;
+}
+
+.menu .menu__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .menu__right .purchase-btn {
+  margin-right: 0;
+  margin-left: auto;
+  padding: 5px 54px;
+  border: 2px solid #111B47;
+  background-color: #111B47;
+  border-radius: 4px;
+  font-style: 12px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 18px;
+  -webkit-transition: color .2s ease-in, background-color .2s ease-in;
+  transition: color .2s ease-in, background-color .2s ease-in;
+}
+
+.menu .menu__right .purchase-btn:hover {
+  color: #111B47;
+  -webkit-transition: color .2s ease-in, background-color .2s ease-in;
+  transition: color .2s ease-in, background-color .2s ease-in;
+  background-color: #fff;
+}
+
+.introduction-section {
+  height: 1050px;
+}
+
+.introduction-section .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.introduction-section .container .introduction {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.introduction-section .container .introduction .introduction__info h1 {
+  font-size: 50px;
+  line-height: 66px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #091133;
+  margin-bottom: 20px;
+}
+
+.introduction-section .container .introduction .introduction__info p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #505f98;
+  margin-bottom: 75px;
+}
+
+.introduction-section .container .introduction .introduction__info .purchase-btn {
+  margin-right: 0;
+  margin-left: auto;
+  padding: 5px 54px;
+  border: 2px solid #111B47;
+  background-color: #111B47;
+  border-radius: 4px;
+  font-style: 12px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 18px;
+  -webkit-transition: color .2s ease-in, background-color .2s ease-in;
+  transition: color .2s ease-in, background-color .2s ease-in;
+}
+
+.introduction-section .container .introduction .introduction__info .purchase-btn:hover {
+  color: #111B47;
+  -webkit-transition: color .2s ease-in, background-color .2s ease-in;
+  transition: color .2s ease-in, background-color .2s ease-in;
+  background-color: #fff;
+}
+
+.introduction-section .container .introduction .introduction__info .purchase-btn {
+  padding: 7px 40px;
+  margin-right: 30px;
+}
+
+.introduction-section .container .introduction .introduction__info .more-btn {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #111B47;
+  border: 2px solid #111B47;
+  border-radius: 4px;
+  padding: 4px 50px;
+  background-color: transparent;
+  -webkit-transition: color .2s ease-in, background-color .2s ease-in;
+  transition: color .2s ease-in, background-color .2s ease-in;
+}
+
+.introduction-section .container .introduction .introduction__info .more-btn:hover {
+  background-color: #111B47;
+  color: #fff;
+  -webkit-transition: color .2s ease-in, background-color .2s ease-in;
+  transition: color .2s ease-in, background-color .2s ease-in;
+}
