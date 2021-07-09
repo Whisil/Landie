@@ -26,3 +26,11 @@ window.addEventListener('mousemove', function(e){
     clouds.style.transform = 'translateX('+ y * 50 + 'px)';
 }); 
 
+// MENU
+
+// const btnLine = document.querySelector(".center-line");
+// const navBtn = document.querySelector('.mobile-nav__btn');
+
+// navBtn.addEventListener('mouseover', function(){
+//     btnLine.style.opacity = '0';
+// });
