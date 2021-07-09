@@ -98,7 +98,25 @@ $cPar: rgba(111, 124, 178, 1);
             p{
                 a{
                     font-weight: 500;
+                    color: rgba(80, 95, 152, 1);
                 }
+            }
+            &::after{
+                content: "";
+                display: block;
+                width: 0px;
+                opacity: 0;
+                height: 3px;
+                background-color: $cDark;
+                transition: width .2s ease-in-out,
+                            opacity .3s ease-in-out;
+                
+            }
+            &:hover::after{
+                opacity: 1;
+                width: 75%;
+                transition: width .2s ease-in-out,
+                            opacity .3s ease-in-out;
             }
         }
     }
@@ -276,11 +294,26 @@ $cPar: rgba(111, 124, 178, 1);
     }
 }
 
+// PRICE
+
 .price{
     @include purchaseBtn();
-    margin-top: 200px;
-    margin-bottom: 100px;
+    margin-top: 150px;
+    padding-top: 100px;
     text-align: center;
+    background-color: rgb(243, 245, 255);
+
+    &::before{
+        content: '';
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+        border-radius: 50%;
+        top: -150px;
+    }
+
     .container{
         max-width: 600px;
     }
@@ -295,13 +328,116 @@ $cPar: rgba(111, 124, 178, 1);
         color: $cPar;
         line-height: 26px;
         padding: 0;
+        margin-bottom: 36px;
+    }
+    .price-dollars{
+        font-size: 50px;
+        line-height: 66px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: rgba(34, 47, 101, 1);
+    }
+    .price-dollars__subtitle{
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 60px;
+    }
+    .price-saying{
+        line-height: 24px;
+        font-size: 14px;
+        color: rgba(93, 105, 112, 1);
     }
     .purchase-btn{
         max-width: 216px;
         margin: 0 auto;
         margin-top: 10px;
+        margin-bottom: 170px;
+        &:hover{
+            background-color: rgb(243, 245, 255);
+        }
     }
+}
 
 
+
+// FOOTER
+
+footer{
+    background-color: rgb(231, 236, 255);
+
+    .footer__top{
+        @include purchaseBtn();
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 61px;
+        padding-bottom: 40px;
+        border-bottom: 2px solid #CDD1D4;
+
+
+        .footer__top_copyright{
+            color: rgba(147, 158, 164, 1);
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+
+        .purchase-btn{
+            margin-left: 0;  
+            max-width: 135px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+            padding: 5px 18px;
+            &:hover{
+                background-color: rgb(231, 236, 255);
+            }
+        }        
+    }
+    .footer__bottom{
+        padding-top: 20px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        .footer__bottom_menu{
+            display: flex;
+            .footer__menu_item{
+                margin-right: 60px;
+                color: $cPar;
+                line-height: 24px;
+                &::after{
+                    content: "";
+                    display: block;
+                    width: 0px;
+                    opacity: 0;
+                    height: 3px;
+                    background-color: $cDark;
+                    transition: width .2s ease-in-out,
+                                opacity .3s ease-in-out;
+                    
+                }
+                &:hover::after{
+                    opacity: 1;
+                    width: 75%;
+                    transition: width .2s ease-in-out,
+                                opacity .3s ease-in-out;
+                }
+            }
+        }
+        .footer_socials{
+            display: flex;
+
+            .footer_socials__item{
+                margin-left: 30px;
+                font-size: 18px;
+                color: #B0B8BC;
+                transition: color .2s ease-in;
+                &:hover{
+                    color: #575b5d;
+                    transition: color .2s ease-in;
+                }
+            }
+        }
+    }
 
 }
